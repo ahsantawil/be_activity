@@ -10,39 +10,138 @@
         </a>
       </li><!-- End Dashboard Nav -->
 
-      <li class="nav-heading">Activity Report</li>
+      <li class="nav-heading">Activity</li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="/activity">
-          <i class="bi bi-person"></i>
+        <a class="nav-link collapsed" data-bs-target="#activity-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-people"></i>
           <span>Activity</span>
+          <i class="bi bi-chevron-down ms-auto"></i>
         </a>
+        <ul id="activity-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="/activity">
+              <i class="bi bi-circle"></i><span>Daily Activity</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Activity Review</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Monthly Review</span>
+            </a>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="bi bi-circle"></i><span></span>Department Evaluation</span>
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="bi bi-circle"></i><span></span>Employee Review</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>KPI</span>
+            </a>
+          </li>
+        </ul>
       </li><!-- End Activity Page Nav -->
 
+      <li class="nav-heading">Report</li>
+
       <li class="nav-item">
-        <a class="nav-link collapsed" href="/activity/data">
-          <i class="bi bi-card-list"></i>
-          <span>Data Activity</span>
+        <a class="nav-link collapsed" data-bs-target="#report-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-box-seam"></i>
+          <span>Report</span>
+          <i class="bi bi-chevron-down ms-auto"></i>
         </a>
-      </li><!-- End Activity Page Nav -->
+        <ul id="report-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Activity Report</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Monthly Review</span>
+            </a>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="bi bi-circle"></i><span></span>Employee Review</span>
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="bi bi-circle"></i><span></span>Department Review</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>KPI</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Report Page Nav -->
 
-      <li class="nav-heading">Data Review</li>
+      <li class="nav-heading">Data Master</li>
 
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#master-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-hdd-stack-fill"></i>
+          <span>Data Master</span>
+          <i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="master-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Employee</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Department</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Client</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Job Type</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Work Days</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav-heading">Settings</li>
+      
       <li class="nav-item">
         <a class="nav-link collapsed" href="#">
-          <i class="bi bi-layout-text-window-reverse"></i>
-          <span>Review</span>
+          <i class="bi bi-gear-fill"></i>
+          <span>Configuration</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
-          <i class="bi bi-bar-chart"></i>
-          <span>Summary</span>
-        </a>
-      </li>
-
-      <li class="nav-heading">Review Lv3</li>
-
     </ul>
 
   </aside><!-- End Sidebar-->
