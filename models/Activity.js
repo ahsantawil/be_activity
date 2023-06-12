@@ -10,7 +10,7 @@ const Activity = db.define('tbacti', {
         primaryKey: true
      },
      idempl: {
-        type: DataTypes.SMALLINT,
+        type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
         foreignKey: true
@@ -30,14 +30,55 @@ const Activity = db.define('tbacti', {
      actidead: {
         type: DataTypes.DATETIME
      },
-    name: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate:{
-            notEmpty: true,
-            len: [3, 100]
-        }
-    },
+     actiloca: {
+         type: DataTypes.VARCHAR,
+         allowNull: true
+     },
+     piccomp: {
+         type: DataTypes.VARCHAR
+     },
+     picname: {
+         type: DataTypes.VARCHAR
+     },
+     picopsi: {
+         type: DataTypes.VARCHAR
+     },
+     picphon: {
+         type: DataTypes.VARCHAR
+     },
+     casetitl: {
+         type: DataTypes.VARCHAR
+     },
+     casedesc: {
+         type: DataTypes.TEXT
+     },
+     caseanal: {
+         type: DataTypes.TEXT
+     },
+     casesolv: {
+         type: DataTypes.TEXT
+     },
+     caseatta: {
+         type: DataTypes.VARCHAR
+     },
+     casestat: {
+         type: DataTypes.INTEGER
+     },
+     casescore: {
+         type: DataTypes.INTEGER
+     },
+     casefeed: {
+         type: DataTypes.TEXT
+     },
+     stat: {
+         type: DataTypes.INTEGER
+     },
+     creaby: {
+         type: DataTypes.VARCHAR
+     },
+     creadate: {
+         type: DataTypes.DATETIME
+     }
 }, {
     freezeTableName: true
 });
