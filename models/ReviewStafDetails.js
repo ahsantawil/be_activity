@@ -25,188 +25,95 @@ const ReviewStafDetails = db.define('tbrevistafdeta', {
         allowNull: false,
         primaryKey: true,
      },
-     dept01: {
-        type: DataTypes.INTEGER,
-     },
-     name01: {
+     q01: {
         type: DataTypes.STRING,
      },
-     avg01: {
-        type: DataTypes.INTEGER,
+     a01: {
+        type: DataTypes.FLOAT,
      },
-     issubm01: {
-        type: DataTypes.INTEGER,
-     },
-     dept02: {
-        type: DataTypes.INTEGER,
-     },
-     name02: {
+     q02: {
         type: DataTypes.STRING,
      },
-     avg02: {
+     a02: {
         type: DataTypes.FLOAT,
      },
-     issubm02: {
-        type: DataTypes.INTEGER,
-     },
-     dept03: {
-        type: DataTypes.INTEGER,
-     },
-     name03: {
+     q03: {
         type: DataTypes.STRING,
      },
-     avg03: {
+     a03: {
         type: DataTypes.FLOAT,
      },
-     issubm03: {
-        type: DataTypes.FLOAT,
-     },
-     dept04: {
-        type: DataTypes.INTEGER,
-     },
-     name04: {
+     q04: {
         type: DataTypes.STRING,
      },
-     avg04: {
+     a04: {
         type: DataTypes.FLOAT,
      },
-     issubm04: {
-        type: DataTypes.INTEGER,
-     },
-     dept05: {
-        type: DataTypes.INTEGER,
-     },
-     name05: {
+     q05: {
         type: DataTypes.STRING,
      },
-     avg05: {
+     a05: {
         type: DataTypes.FLOAT,
      },
-     issubm05: {
-        type: DataTypes.INTEGER,
-     },
-     dept06: {
-        type: DataTypes.INTEGER,
-     },
-     name06: {
+     q06: {
         type: DataTypes.STRING,
      },
-     avg06: {
+     a06: {
         type: DataTypes.FLOAT,
      },
-     issubm06: {
-        type: DataTypes.INTEGER,
-     },
-     dept07: {
-        type: DataTypes.INTEGER,
-     },
-     name07: {
+     q07: {
         type: DataTypes.STRING,
      },
-     avg07: {
+     a07: {
         type: DataTypes.FLOAT,
      },
-     issubm07: {
-        type: DataTypes.INTEGER,
-     },
-     dept08: {
-        type: DataTypes.INTEGER,
-     },
-     name08: {
+     q08: {
         type: DataTypes.STRING,
      },
-     avg08: {
+     a08: {
         type: DataTypes.FLOAT,
      },
-     issubm08: {
-        type: DataTypes.INTEGER,
-     },
-     dept10: {
-        type: DataTypes.INTEGER,
-     },
-     name10: {
+     q09: {
         type: DataTypes.STRING,
      },
-     avg09: {
+     a09: {
         type: DataTypes.FLOAT,
      },
-     issubm09: {
-        type: DataTypes.INTEGER,
-     },
-     dept10: {
-        type: DataTypes.INTEGER,
-     },
-     name10: {
+     q010: {
         type: DataTypes.STRING,
      },
-     avg10: {
+     a010: {
         type: DataTypes.FLOAT,
      },
-     issubm10: {
-        type: DataTypes.INTEGER,
-     },
-     dept11: {
-        type: DataTypes.INTEGER,
-     },
-     name11: {
+     q011: {
         type: DataTypes.STRING,
      },
-     avg11: {
+     a011: {
         type: DataTypes.FLOAT,
      },
-     issubm11: {
-        type: DataTypes.INTEGER,
-     },
-     dept12: {
-        type: DataTypes.INTEGER,
-     },
-     name12: {
+     q012: {
         type: DataTypes.STRING,
      },
-     avg12: {
+     a012: {
         type: DataTypes.FLOAT,
      },
-     issubm12: {
-        type: DataTypes.INTEGER,
-     },
-     dept13: {
-        type: DataTypes.INTEGER,
-     },
-     name13: {
+     q013: {
         type: DataTypes.STRING,
      },
-     avg13: {
+     a013: {
         type: DataTypes.FLOAT,
      },
-     issubm13: {
-        type: DataTypes.INTEGER,
-     },
-     dept14: {
-        type: DataTypes.INTEGER,
-     },
-     name14: {
+     q014: {
         type: DataTypes.STRING,
      },
-     avg14: {
+     a014: {
         type: DataTypes.FLOAT,
      },
-     issubm14: {
-        type: DataTypes.INTEGER,
-     },
-     dept15: {
-        type: DataTypes.INTEGER,
-     },
-     name15: {
+     q015: {
         type: DataTypes.STRING,
      },
-     avg15: {
+     a015: {
         type: DataTypes.FLOAT,
-     },
-     issubm15: {
-        type: DataTypes.INTEGER,
-     },
-     stat: {
-        type: DataTypes.INTEGER,
      },
      creaby: {
         type: DataTypes.STRING,
@@ -218,4 +125,4 @@ const ReviewStafDetails = db.define('tbrevistafdeta', {
     freezeTableName: true
 });
 
-module.exports = Sequelize.model('tbrevistafdeta', ReviewStafDetaSchema)
+module.exports = Sequelize.model('tbrevistafdeta', ReviewStafDetailsSchema)
