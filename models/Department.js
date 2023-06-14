@@ -1,6 +1,5 @@
-const {Sequelize} = require ('sequelize');
-
-const {DataTypes} = Sequelize;
+const {Sequelize, DataTypes} = require ('sequelize');
+const db = require('./../config/Database.js');
 
 const Department = db.define('tbdept', {
     id: { 
@@ -28,4 +27,4 @@ const Department = db.define('tbdept', {
     freezeTableName: true
 });
 
-module.exports = Sequelize.model('tbdept', DepartmentSchema)
+module.exports = Sequelize.model('tbdept', Department)

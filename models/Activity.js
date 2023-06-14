@@ -1,7 +1,8 @@
 const {Sequelize} = require ('sequelize');
+const Employe =  require('./Employe');
+const Jobs =  require('./Jobs');
 
 const {DataTypes} = Sequelize;
-
 const Activity = db.define('tbacti', {
     id: { 
         type: DataTypes.INTEGER,
@@ -83,7 +84,8 @@ const Activity = db.define('tbacti', {
     freezeTableName: true
 });
 
-Users.hasMany(Activity);
-Products.belongsTo(Users, (foreignKey: 'id'));
+Activity.hasMany(Employe, Jobs);
+Employe.belongsTo(Activity);
+Jobs.belongsTo(Activity);
 
 module.exports = Sequelize.model('tbacti', ActivitySchema)
