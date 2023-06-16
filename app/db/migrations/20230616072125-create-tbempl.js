@@ -10,8 +10,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       iddept: {
-        type: Sequelize.INTEGER,
-        foreignKey: true
+        type: Sequelize.STRING
       },
       nik: {
         type: Sequelize.STRING
@@ -20,7 +19,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       gend: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       emai: {
         type: Sequelize.STRING
@@ -29,19 +28,19 @@ module.exports = {
         type: Sequelize.STRING
       },
       level: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       lastlogi: {
-        type: Sequelize.DATETIME
+        type: Sequelize.STRING
       },
       stat: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       creaby: {
         type: Sequelize.STRING
       },
       creadate: {
-        type: Sequelize.DATETIME
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
