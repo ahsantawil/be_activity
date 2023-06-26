@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { viewDepartment } = require('./controller')
+const { viewEmply } = require('./controllers')
 
-router.get('/', viewDepartment);
+router.get('/', viewEmply);
 module.exports = router;
