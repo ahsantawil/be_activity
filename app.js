@@ -9,6 +9,7 @@ const dashboardRouter = require('./controllers/dashboard/router');
 const activityRouter = require('./controllers/activity/router');
 const employeRouter = require('./controllers/employe/router');
 const departmentRouter = require('./controllers/department/router');
+const jobRouter = require('./controllers/job/router');
 
 const app = express();
 
@@ -29,6 +30,7 @@ app.use('/dashboard', dashboardRouter);
 app.use('/activity', activityRouter);
 app.use('/employe', employeRouter);
 app.use('/department', departmentRouter);
+app.use('/jobs', jobRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
