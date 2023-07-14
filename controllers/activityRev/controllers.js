@@ -27,7 +27,7 @@ module.exports = {
 
     viewActivityRev : async (req, res) => {
       try {
-        res.render('admin/activity/view_activity', {
+        res.render('admin/activityRev/activity_review', {
           title: 'Report - Activity '
         })
       } catch (error) {
